@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.carlos-sancho-ramirez:lib-java-collections:1.0.0'
+    implementation 'com.github.carlos-sancho-ramirez:lib-java-collections:1.1.0'
     implementation 'org.junit.jupiter:junit-jupiter:5.4.0'
 }
 
@@ -45,9 +45,10 @@ javadoc {
   classpath = configurations.compileClasspath
 
   options {
+    source '8'
     setMemberLevel JavadocMemberLevel.PUBLIC
     setAuthor false
 
-    links "https://docs.oracle.com/javase/7/docs/api/"
+    links "https://docs.oracle.com/javase/8/docs/api/"
   }
 }
